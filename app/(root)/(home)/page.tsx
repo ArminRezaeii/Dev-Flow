@@ -1,11 +1,9 @@
-import React from "react";
-
-function Home() {
+import { UserButton } from "@clerk/nextjs";
+ 
+export default function Home() {
   return (
-    <>
-      <p>sweq</p>
-    </>
-  );
+    <div className="h-screen">
+      <UserButton afterSignOutUrl="/"/>
+    </div>
+  )
 }
-
-export default Home;
