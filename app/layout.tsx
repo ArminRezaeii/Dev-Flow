@@ -3,13 +3,14 @@ import './globals.css'
 import { Inter, Space_Grotesk } from 'next/font/google'
 import { Metadata } from 'next'
 import { ThemeProvider } from '@/context/ThemeProvider'
-export const metaData: Metadata = {
-  title: "DevFlow",
-  description: 'A community driven platform for developers asking and answering questions.Get help and answers to your questions about anything related to programming and software development from the best developers on the internet.',
+export const metadata: Metadata = {
+  title: 'DevFlow',
+  description:
+    'A community driven platform for developers asking and answering questions.Get help and answers to your questions about anything related to programming and software development from the best developers on the internet.',
   icons: {
-    icon: "/assets/images/site-logo.svg"
+    icon: '/assets/images/site-logo.svg'
   }
-}
+};
 const inter = Inter({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -26,9 +27,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-
     <html lang="en" className={`${inter.variable}${spaceGrotest.variable}`}>
-
       <body>
         <ClerkProvider
           appearance={{

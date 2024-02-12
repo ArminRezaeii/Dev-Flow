@@ -64,7 +64,7 @@ body {
 
 .active-theme {
   filter: invert(53%) sepia(98%) saturate(3332%) hue-rotate(0deg)
-    brightness(104%) contrast(106%) !important;
+
 }
 
 .light-gradient {
